@@ -1,0 +1,31 @@
+{
+  "name": "ms-authentication",
+  "version": "1.0.0",
+  "description": "Microservice",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+    "build": "tsc -p .",
+    "dev": "ts-node-dev  --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
+  },
+  "author": "Bruno Chaves",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/config": "^0.0.41",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^17.0.10",
+    "@types/pg": "^8.6.4",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.17.2",
+    "http-status-code": "^2.1.0",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.1"
+  }
+}
